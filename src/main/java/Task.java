@@ -14,6 +14,17 @@ public class Task {
          *
          */
 
+	int temp = 0;
+	for(int i=0;i<nums.length;i++){
+
+		for(int j=i+1;j<nums.length;j++){
+			temp = (nums[i]+nums[j]);
+			if(temp==target){
+				return 1;
+		}
+	}
+
+
         return -1;
 
     }
